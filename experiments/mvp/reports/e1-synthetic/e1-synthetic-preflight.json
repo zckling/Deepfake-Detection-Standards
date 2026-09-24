@@ -1,0 +1,1802 @@
+{
+  "schema_version": "1.0.0",
+  "result_class": "synthetic_preflight",
+  "formal_evaluation": false,
+  "warning": "Truth-aware logical fixtures validate plumbing only; they are not detector-quality evidence.",
+  "dataset": {
+    "dataset_id": "D0-SMOKE-LOGICAL",
+    "sample_count": 12,
+    "contains_media_bytes": false,
+    "purpose": "schema, adapter, routing, and report integration preflight"
+  },
+  "samples": [
+    {
+      "sample_id": "DFSTD-A-000001",
+      "group_id": "GRP-000001",
+      "source_id": "SRC-D0-000001",
+      "file_path": "synthetic://d0-smoke/DFSTD-A-000001",
+      "sha256": "568d1b72127ec1143e2d5b83d9861226e07fec5b73c5938e1b9046ca762d7f4b",
+      "media_type": "audio",
+      "duration_sec": 4.0,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": null,
+      "source_type": "SRC-CTL",
+      "label_state": "REAL",
+      "fake_modalities": [],
+      "fake_objects": []
+    },
+    {
+      "sample_id": "DFSTD-A-100001",
+      "group_id": "GRP-000001",
+      "source_id": "SRC-D0-000001",
+      "file_path": "synthetic://d0-smoke/DFSTD-A-100001",
+      "sha256": "1f593f64bd1564a705a219e292a166b735b6e3e250cfaac33650b169869be385",
+      "media_type": "audio",
+      "duration_sec": 4.0,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": "DFSTD-A-000001",
+      "source_type": "SRC-GEN",
+      "label_state": "FAKE",
+      "fake_modalities": [
+        "M1"
+      ],
+      "fake_objects": [
+        "O1"
+      ],
+      "fake_method": "d0_smoke_voice_clone_or_conversion",
+      "method_family": "voice_clone_or_conversion",
+      "scope_id": "speaker.full",
+      "granularity": "object"
+    },
+    {
+      "sample_id": "DFSTD-V-000002",
+      "group_id": "GRP-000002",
+      "source_id": "SRC-D0-000002",
+      "file_path": "synthetic://d0-smoke/DFSTD-V-000002",
+      "sha256": "2a09f6f78080ac41b8b33fd689d4bab43e0a2f3cc65cc27693ea346d2bf07a9f",
+      "media_type": "video",
+      "duration_sec": 4.0,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": null,
+      "source_type": "SRC-CTL",
+      "label_state": "REAL",
+      "fake_modalities": [],
+      "fake_objects": []
+    },
+    {
+      "sample_id": "DFSTD-V-100002",
+      "group_id": "GRP-000002",
+      "source_id": "SRC-D0-000002",
+      "file_path": "synthetic://d0-smoke/DFSTD-V-100002",
+      "sha256": "ffff83a5898778e6685716364fbc701b07fcc65a544ea3a0b2647a21760b80d6",
+      "media_type": "video",
+      "duration_sec": 4.0,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": "DFSTD-V-000002",
+      "source_type": "SRC-GEN",
+      "label_state": "FAKE",
+      "fake_modalities": [
+        "M2"
+      ],
+      "fake_objects": [
+        "O1"
+      ],
+      "fake_method": "d0_smoke_identity_replacement",
+      "method_family": "identity_replacement",
+      "scope_id": "face.full.segment",
+      "granularity": "object"
+    },
+    {
+      "sample_id": "DFSTD-I-000003",
+      "group_id": "GRP-000003",
+      "source_id": "SRC-D0-000003",
+      "file_path": "synthetic://d0-smoke/DFSTD-I-000003",
+      "sha256": "67344e6bbb0d21567302a3ea730be9ce69d28e3d8a917e75063ac73d38e31593",
+      "media_type": "image",
+      "duration_sec": null,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": null,
+      "source_type": "SRC-CTL",
+      "label_state": "REAL",
+      "fake_modalities": [],
+      "fake_objects": []
+    },
+    {
+      "sample_id": "DFSTD-I-100003",
+      "group_id": "GRP-000003",
+      "source_id": "SRC-D0-000003",
+      "file_path": "synthetic://d0-smoke/DFSTD-I-100003",
+      "sha256": "54f816f6a91b564409e7685c9cc8995898cdc30f7730568ab5f532b73364955e",
+      "media_type": "image",
+      "duration_sec": null,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": "DFSTD-I-000003",
+      "source_type": "SRC-GEN",
+      "label_state": "FAKE",
+      "fake_modalities": [
+        "M3"
+      ],
+      "fake_objects": [
+        "O2"
+      ],
+      "fake_method": "d0_smoke_object_editing",
+      "method_family": "object_editing",
+      "scope_id": "object.local",
+      "granularity": "object"
+    },
+    {
+      "sample_id": "DFSTD-T-000004",
+      "group_id": "GRP-000004",
+      "source_id": "SRC-D0-000004",
+      "file_path": "synthetic://d0-smoke/DFSTD-T-000004",
+      "sha256": "0a0c45ed8536c39544f4dac46e8317b3b89cd1dc65f614c5ba27bf0eadccfac8",
+      "media_type": "text",
+      "duration_sec": null,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": null,
+      "source_type": "SRC-CTL",
+      "label_state": "REAL",
+      "fake_modalities": [],
+      "fake_objects": []
+    },
+    {
+      "sample_id": "DFSTD-T-100004",
+      "group_id": "GRP-000004",
+      "source_id": "SRC-D0-000004",
+      "file_path": "synthetic://d0-smoke/DFSTD-T-100004",
+      "sha256": "bd99fc698357e2d0e517a7807ea8a39b87f95e2d83374be1ca50b70611e28091",
+      "media_type": "text",
+      "duration_sec": null,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": "DFSTD-T-000004",
+      "source_type": "SRC-GEN",
+      "label_state": "FAKE",
+      "fake_modalities": [
+        "M4"
+      ],
+      "fake_objects": [
+        "O4"
+      ],
+      "fake_method": "d0_smoke_text_editing",
+      "method_family": "text_editing",
+      "scope_id": "text.span",
+      "granularity": "object"
+    },
+    {
+      "sample_id": "DFSTD-M-000005",
+      "group_id": "GRP-000005",
+      "source_id": "SRC-D0-000005",
+      "file_path": "synthetic://d0-smoke/DFSTD-M-000005",
+      "sha256": "715d397ffded7df520223adbf2da0336490c2eda0321dc182ca3d1910434ad65",
+      "media_type": "multimodal",
+      "duration_sec": 4.0,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": null,
+      "source_type": "SRC-CTL",
+      "label_state": "REAL",
+      "fake_modalities": [],
+      "fake_objects": []
+    },
+    {
+      "sample_id": "DFSTD-M-100005",
+      "group_id": "GRP-000005",
+      "source_id": "SRC-D0-000005",
+      "file_path": "synthetic://d0-smoke/DFSTD-M-100005",
+      "sha256": "3dcad8d7862a7fa367d391c03a2efc7f41abfec5fdf608e37f69decef60d50e6",
+      "media_type": "multimodal",
+      "duration_sec": 4.0,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": "DFSTD-M-000005",
+      "source_type": "SRC-GEN",
+      "label_state": "FAKE",
+      "fake_modalities": [
+        "M5"
+      ],
+      "fake_objects": [
+        "O1",
+        "O4"
+      ],
+      "fake_method": "d0_smoke_multimodal_joint",
+      "method_family": "multimodal_joint",
+      "scope_id": "mixed.cross_modal",
+      "granularity": "full_generation"
+    },
+    {
+      "sample_id": "DFSTD-V-000006",
+      "group_id": "GRP-000006",
+      "source_id": "SRC-D0-000006",
+      "file_path": "synthetic://d0-smoke/DFSTD-V-000006",
+      "sha256": "8805fe31c2ff3f85d07724bca1d9df39602986dc42174c8ca1adea3cbd7e4275",
+      "media_type": "video",
+      "duration_sec": 4.0,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": null,
+      "source_type": "SRC-CTL",
+      "label_state": "REAL",
+      "fake_modalities": [],
+      "fake_objects": []
+    },
+    {
+      "sample_id": "DFSTD-V-100006",
+      "group_id": "GRP-000006",
+      "source_id": "SRC-D0-000006",
+      "file_path": "synthetic://d0-smoke/DFSTD-V-100006",
+      "sha256": "d3d361155c76dd9097153cf88b881c204662eeffc27524709f5994d581599b48",
+      "media_type": "video",
+      "duration_sec": 4.0,
+      "partition": "D0",
+      "license_status": "internal_logical_fixture",
+      "access_class": "internal",
+      "annotation_version": "1.0.0",
+      "review_status": "adjudicated",
+      "exclusion_status": "included",
+      "exclusion_reason": null,
+      "schema_version": "1.0.0",
+      "parent_sample_id": "DFSTD-V-000006",
+      "source_type": "SRC-GEN",
+      "label_state": "FAKE",
+      "fake_modalities": [
+        "M2"
+      ],
+      "fake_objects": [
+        "O3"
+      ],
+      "fake_method": "d0_smoke_scene_generation",
+      "method_family": "scene_generation",
+      "scope_id": "scene.full",
+      "granularity": "full_generation"
+    }
+  ],
+  "systems": [
+    {
+      "system_id": "SUT-SYN-PERFECT",
+      "name": "D0 synthetic perfect adapter",
+      "system_version": "1.0.0",
+      "system_type": "synthetic_baseline",
+      "code_revision": "logical-preflight-v1",
+      "weights_sha256": null,
+      "capabilities": [
+        "binary_classification"
+      ],
+      "environment": {
+        "runtime": "python-standard-library",
+        "purpose": "pipeline_preflight_only",
+        "truth_aware": true
+      },
+      "schema_version": "1.0.0"
+    },
+    {
+      "system_id": "SUT-SYN-INVERSE",
+      "name": "D0 synthetic inverse adapter",
+      "system_version": "1.0.0",
+      "system_type": "synthetic_baseline",
+      "code_revision": "logical-preflight-v1",
+      "weights_sha256": null,
+      "capabilities": [
+        "binary_classification"
+      ],
+      "environment": {
+        "runtime": "python-standard-library",
+        "purpose": "pipeline_preflight_only",
+        "truth_aware": true
+      },
+      "schema_version": "1.0.0"
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "experiment_id": "E1",
+      "dataset_version": "D0-SMOKE-LOGICAL-1.0.0",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "config_sha256": "894791402064afae9b83a2fa75f91a04bc23a98d531ae2e6e96d24c9bd09757e",
+      "environment_sha256": "d4806428c1adeb00318eab696eb3c64579e88eb8f2acd0eba91914b2e35805d6",
+      "started_at": "2026-09-23T00:00:00Z",
+      "finished_at": "2026-09-23T00:00:01Z",
+      "status": "completed",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "experiment_id": "E1",
+      "dataset_version": "D0-SMOKE-LOGICAL-1.0.0",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "config_sha256": "19219482c052b2c53142aa5abec9c86b725a9f2c499d4e5797220c03e272f75c",
+      "environment_sha256": "d4806428c1adeb00318eab696eb3c64579e88eb8f2acd0eba91914b2e35805d6",
+      "started_at": "2026-09-23T00:00:00Z",
+      "finished_at": "2026-09-23T00:00:01Z",
+      "status": "completed",
+      "schema_version": "1.0.0"
+    }
+  ],
+  "predictions": [
+    {
+      "sample_id": "DFSTD-A-000001",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001001,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-A-100001",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001002,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-V-000002",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001003,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-V-100002",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001004,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-I-000003",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001005,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-I-100003",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001006,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-T-000004",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001007,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-T-100004",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001008,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-M-000005",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001009,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-M-100005",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.00101,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-V-000006",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001011,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-V-100006",
+      "system_id": "SUT-SYN-PERFECT",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001012,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-A-000001",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001001,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-A-100001",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001002,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-V-000002",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001003,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-V-100002",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001004,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-I-000003",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001005,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-I-100003",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001006,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-T-000004",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001007,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-T-100004",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001008,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-M-000005",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001009,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-M-100005",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.00101,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-V-000006",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": true,
+      "fake_score": 0.9,
+      "processing_time_sec": 0.001011,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    },
+    {
+      "sample_id": "DFSTD-V-100006",
+      "system_id": "SUT-SYN-INVERSE",
+      "system_version": "1.0.0",
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "is_fake_pred": false,
+      "fake_score": 0.1,
+      "processing_time_sec": 0.001012,
+      "status": "ok",
+      "error_code": null,
+      "schema_version": "1.0.0"
+    }
+  ],
+  "metrics": {
+    "SUT-SYN-PERFECT": {
+      "C-1": 1.0,
+      "C-2": 1.0,
+      "C-3": 1.0,
+      "C-4": 1.0,
+      "C-5": 1.0,
+      "C-6": 0.0,
+      "D-1": 0.0010065
+    },
+    "SUT-SYN-INVERSE": {
+      "C-1": 0.0,
+      "C-2": 0.0,
+      "C-3": 0.0,
+      "C-4": 0.0,
+      "C-5": 0.0,
+      "C-6": 1.0,
+      "D-1": 0.0010065
+    }
+  },
+  "metric_results": [
+    {
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "metric_id": "C-1",
+      "status": "ok",
+      "value": 1.0,
+      "numerator": 12,
+      "denominator": 12,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "metric_id": "C-2",
+      "status": "ok",
+      "value": 1.0,
+      "numerator": 6,
+      "denominator": 6,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "metric_id": "C-3",
+      "status": "ok",
+      "value": 1.0,
+      "numerator": 6,
+      "denominator": 6,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "metric_id": "C-4",
+      "status": "ok",
+      "value": 1.0,
+      "numerator": 12,
+      "denominator": 12,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "metric_id": "C-5",
+      "status": "ok",
+      "value": 1.0,
+      "numerator": null,
+      "denominator": null,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "metric_id": "C-6",
+      "status": "ok",
+      "value": 0.0,
+      "numerator": null,
+      "denominator": null,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-PERFECT-001",
+      "metric_id": "D-1",
+      "status": "ok",
+      "value": 0.0010065,
+      "numerator": 0.012078,
+      "denominator": 12.0,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "metric_id": "C-1",
+      "status": "ok",
+      "value": 0.0,
+      "numerator": 0,
+      "denominator": 12,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "metric_id": "C-2",
+      "status": "ok",
+      "value": 0.0,
+      "numerator": 0,
+      "denominator": 6,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "metric_id": "C-3",
+      "status": "ok",
+      "value": 0.0,
+      "numerator": 0,
+      "denominator": 6,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "metric_id": "C-4",
+      "status": "ok",
+      "value": 0.0,
+      "numerator": 0,
+      "denominator": 12,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "metric_id": "C-5",
+      "status": "ok",
+      "value": 0.0,
+      "numerator": null,
+      "denominator": null,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "metric_id": "C-6",
+      "status": "ok",
+      "value": 1.0,
+      "numerator": null,
+      "denominator": null,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    },
+    {
+      "run_id": "RUN-E1-SYN-INVERSE-001",
+      "metric_id": "D-1",
+      "status": "ok",
+      "value": 0.0010065,
+      "numerator": 0.012078,
+      "denominator": 12.0,
+      "analysis_unit": "sample",
+      "calculator_version": "mvp-1.1.0",
+      "schema_version": "1.0.0"
+    }
+  ],
+  "relationship_errors": [],
+  "computability_matrix": [
+    {
+      "metric_id": "A-1",
+      "metric_name": "模态支持声明完整性",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "A-1",
+      "metric_name": "模态支持声明完整性",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "A-2",
+      "metric_name": "分模态识别准确度",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "A-2",
+      "metric_name": "分模态识别准确度",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "A-3",
+      "metric_name": "多模态一致性识别能力",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "multimodal_consistency"
+      ],
+      "missing_prediction_fields": [
+        "fake_modality_pred"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "A-3",
+      "metric_name": "多模态一致性识别能力",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "multimodal_consistency"
+      ],
+      "missing_prediction_fields": [
+        "fake_modality_pred"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "B-1",
+      "metric_name": "对象支持声明完整性",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "B-1",
+      "metric_name": "对象支持声明完整性",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "B-2",
+      "metric_name": "分对象识别准确度",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "B-2",
+      "metric_name": "分对象识别准确度",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "B-3",
+      "metric_name": "重要目标识别能力",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "object_classification"
+      ],
+      "missing_prediction_fields": [
+        "fake_object_pred"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "B-3",
+      "metric_name": "重要目标识别能力",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "object_classification"
+      ],
+      "missing_prediction_fields": [
+        "fake_object_pred"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "C-1",
+      "metric_name": "Accuracy",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-1",
+      "metric_name": "Accuracy",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-2",
+      "metric_name": "Precision",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-2",
+      "metric_name": "Precision",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-3",
+      "metric_name": "Recall",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-3",
+      "metric_name": "Recall",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-4",
+      "metric_name": "F1",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-4",
+      "metric_name": "F1",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-5",
+      "metric_name": "AUC",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-5",
+      "metric_name": "AUC",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-6",
+      "metric_name": "EER",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-6",
+      "metric_name": "EER",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-7",
+      "metric_name": "代价敏感错误率",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "C-7",
+      "metric_name": "代价敏感错误率",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "C-8",
+      "metric_name": "区域定位精度",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "regions"
+      ],
+      "missing_capabilities": [
+        "spatial_localization"
+      ],
+      "missing_prediction_fields": [
+        "regions"
+      ],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-8",
+      "metric_name": "区域定位精度",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "regions"
+      ],
+      "missing_capabilities": [
+        "spatial_localization"
+      ],
+      "missing_prediction_fields": [
+        "regions"
+      ],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-9",
+      "metric_name": "片段定位精度",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "segments"
+      ],
+      "missing_capabilities": [
+        "temporal_localization"
+      ],
+      "missing_prediction_fields": [
+        "segments"
+      ],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-9",
+      "metric_name": "片段定位精度",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "segments"
+      ],
+      "missing_capabilities": [
+        "temporal_localization"
+      ],
+      "missing_prediction_fields": [
+        "segments"
+      ],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "C-10",
+      "metric_name": "AP/mAP",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "regions"
+      ],
+      "missing_capabilities": [
+        "ranked_localization"
+      ],
+      "missing_prediction_fields": [
+        "regions"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "C-10",
+      "metric_name": "AP/mAP",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "regions"
+      ],
+      "missing_capabilities": [
+        "ranked_localization"
+      ],
+      "missing_prediction_fields": [
+        "regions"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "D-1",
+      "metric_name": "平均识别时延",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "D-1",
+      "metric_name": "平均识别时延",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "computable",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "D-2",
+      "metric_name": "实时率",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "temporal_media"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "D-2",
+      "metric_name": "实时率",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "temporal_media"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "D-3",
+      "metric_name": "FPS",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "video_processing"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "D-3",
+      "metric_name": "FPS",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "video_processing"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "D-4",
+      "metric_name": "吞吐量",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "batch_size",
+        "concurrency",
+        "wall_clock_sec"
+      ],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "D-4",
+      "metric_name": "吞吐量",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "batch_size",
+        "concurrency",
+        "wall_clock_sec"
+      ],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "implemented"
+    },
+    {
+      "metric_id": "D-5",
+      "metric_name": "资源占用",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "resource_telemetry"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "D-5",
+      "metric_name": "资源占用",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "resource_telemetry"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "E-1",
+      "metric_name": "扰动后识别性能",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "perturbation_id"
+      ],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "E-1",
+      "metric_name": "扰动后识别性能",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "perturbation_id"
+      ],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "E-2",
+      "metric_name": "性能下降率",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "perturbation_id"
+      ],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "E-2",
+      "metric_name": "性能下降率",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "perturbation_id"
+      ],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "E-3",
+      "metric_name": "最差扰动场景性能",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "perturbation_id"
+      ],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "E-3",
+      "metric_name": "最差扰动场景性能",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "perturbation_id"
+      ],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "E-4",
+      "metric_name": "对抗样本抵御能力",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "adversarial_id"
+      ],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "E-4",
+      "metric_name": "对抗样本抵御能力",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "adversarial_id"
+      ],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "F-1",
+      "metric_name": "跨数据集泛化性能",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "F-1",
+      "metric_name": "跨数据集泛化性能",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "F-2",
+      "metric_name": "未知伪造方法识别能力",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "F-2",
+      "metric_name": "未知伪造方法识别能力",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "F-3",
+      "metric_name": "未知伪造区域识别能力",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "regions"
+      ],
+      "missing_capabilities": [
+        "spatial_localization"
+      ],
+      "missing_prediction_fields": [
+        "regions"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "F-3",
+      "metric_name": "未知伪造区域识别能力",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "regions"
+      ],
+      "missing_capabilities": [
+        "spatial_localization"
+      ],
+      "missing_prediction_fields": [
+        "regions"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "F-4",
+      "metric_name": "四象限泛化能力",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "F-4",
+      "metric_name": "四象限泛化能力",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "calculator_pending",
+      "missing_data_fields": [],
+      "missing_capabilities": [],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "G-1",
+      "metric_name": "证据输出完整性",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "evidence_output"
+      ],
+      "missing_prediction_fields": [
+        "evidence_files"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "G-1",
+      "metric_name": "证据输出完整性",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "evidence_output"
+      ],
+      "missing_prediction_fields": [
+        "evidence_files"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "G-2",
+      "metric_name": "证据定位一致性",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "regions"
+      ],
+      "missing_capabilities": [
+        "evidence_localization"
+      ],
+      "missing_prediction_fields": [
+        "evidence_files",
+        "regions"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "G-2",
+      "metric_name": "证据定位一致性",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "missing_data",
+      "missing_data_fields": [
+        "regions"
+      ],
+      "missing_capabilities": [
+        "evidence_localization"
+      ],
+      "missing_prediction_fields": [
+        "evidence_files",
+        "regions"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "G-3",
+      "metric_name": "可解释性证据数量",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "evidence_output"
+      ],
+      "missing_prediction_fields": [
+        "evidence_files"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "G-3",
+      "metric_name": "可解释性证据数量",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "evidence_output"
+      ],
+      "missing_prediction_fields": [
+        "evidence_files"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "G-4",
+      "metric_name": "证据可复核率",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "evidence_output"
+      ],
+      "missing_prediction_fields": [
+        "evidence_files"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "G-4",
+      "metric_name": "证据可复核率",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "evidence_output"
+      ],
+      "missing_prediction_fields": [
+        "evidence_files"
+      ],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "G-5",
+      "metric_name": "取证报告完整性",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "forensic_reporting"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "G-5",
+      "metric_name": "取证报告完整性",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "forensic_reporting"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "H-1",
+      "metric_name": "模型复杂性",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "model_metadata"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "H-1",
+      "metric_name": "模型复杂性",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "model_metadata"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "H-2",
+      "metric_name": "部署复杂性",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "deployment_metadata"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "H-2",
+      "metric_name": "部署复杂性",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "deployment_metadata"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "H-3",
+      "metric_name": "跨平台能力",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "platform_metadata"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "H-3",
+      "metric_name": "跨平台能力",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "platform_metadata"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "H-4",
+      "metric_name": "兼容互操作能力",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "interoperability_metadata"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "H-4",
+      "metric_name": "兼容互操作能力",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "interoperability_metadata"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "H-5",
+      "metric_name": "操作易用性",
+      "system_id": "SUT-SYN-PERFECT",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "usability_evidence"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    },
+    {
+      "metric_id": "H-5",
+      "metric_name": "操作易用性",
+      "system_id": "SUT-SYN-INVERSE",
+      "status": "unsupported",
+      "missing_data_fields": [],
+      "missing_capabilities": [
+        "usability_evidence"
+      ],
+      "missing_prediction_fields": [],
+      "calculator_status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "annotation_id": "ANN-000001",
+  "sample_id": "DFSTD-V-000001",
+  "annotation_type": "temporal",
+  "annotator_id": "annotator-a",
+  "review_status": "adjudicated",
+  "confidence": 1.0,
+  "payload": {"start_sec": 1.0, "end_sec": 2.0, "modality": "M2"},
+  "schema_version": "1.0.0"
+}

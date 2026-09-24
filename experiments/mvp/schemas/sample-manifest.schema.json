@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deepfake-standard.local/schemas/sample-manifest.schema.json",
+  "title": "Deepfake Standard Sample Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "sample_id", "group_id", "parent_sample_id", "source_id", "file_path", "sha256",
+    "source_type", "media_type", "label_state", "fake_modalities", "fake_objects",
+    "duration_sec", "partition", "license_status", "access_class", "annotation_version",
+    "review_status", "exclusion_status", "exclusion_reason", "schema_version"
+  ],
+  "properties": {
+    "sample_id": {"type": "string", "pattern": "^DFSTD-[A-Z]+-[0-9]{6}$"},
+    "group_id": {"type": "string", "pattern": "^GRP-[0-9]{6}$"},
+    "parent_sample_id": {"type": ["string", "null"]},
+    "source_id": {"type": "string", "minLength": 1},
+    "file_path": {"type": "string", "minLength": 1},
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "source_type": {"enum": ["SRC-PUB", "SRC-CTL", "SRC-GEN", "SRC-EXT", "SRC-WLD"]},
+    "media_type": {"enum": ["video", "audio", "image", "text", "multimodal"]},
+    "label_state": {"enum": ["REAL", "FAKE", "UNCERTAIN", "OUT-OF-SCOPE"]},
+    "fake_modalities": {"type": "array", "uniqueItems": true, "items": {"enum": ["M1", "M2", "M3", "M4", "M5"]}},
+    "fake_objects": {"type": "array", "uniqueItems": true, "items": {"enum": ["O1", "O2", "O3", "O4"]}},
+    "fake_method": {"type": ["string", "null"]},
+    "method_family": {"type": ["string", "null"]},
+    "scope_id": {"type": ["string", "null"]},
+    "granularity": {"enum": ["local", "object", "scene", "full_generation", null]},
+    "duration_sec": {"type": ["number", "null"], "minimum": 0},
+    "width": {"type": ["integer", "null"], "minimum": 1},
+    "height": {"type": ["integer", "null"], "minimum": 1},
+    "fps": {"type": ["number", "null"], "exclusiveMinimum": 0},
+    "partition": {"enum": ["D0", "D1", "D2", "D3"]},
+    "license_status": {"type": "string", "minLength": 1},
+    "access_class": {"enum": ["public", "internal", "restricted", "secret"]},
+    "annotation_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "review_status": {"enum": ["draft", "double_annotated", "adjudicated", "expert_reviewed"]},
+    "exclusion_status": {"enum": ["included", "excluded", "quarantined"]},
+    "exclusion_reason": {"type": ["string", "null"]},
+    "schema_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"label_state": {"const": "FAKE"}}, "required": ["label_state"]},
+      "then": {
+        "required": ["method_family", "scope_id", "granularity"],
+        "properties": {
+          "fake_modalities": {"minItems": 1},
+          "fake_objects": {"minItems": 1},
+          "method_family": {"type": "string", "minLength": 1},
+          "scope_id": {"type": "string", "minLength": 1},
+          "granularity": {"enum": ["local", "object", "scene", "full_generation"]}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"label_state": {"const": "REAL"}}, "required": ["label_state"]},
+      "then": {"properties": {"fake_modalities": {"maxItems": 0}, "fake_objects": {"maxItems": 0}}}
+    },
+    {
+      "if": {"properties": {"exclusion_status": {"enum": ["excluded", "quarantined"]}}, "required": ["exclusion_status"]},
+      "then": {"properties": {"exclusion_reason": {"type": "string", "minLength": 1}}}
+    }
+  ]
+}

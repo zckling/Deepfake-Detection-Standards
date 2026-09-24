@@ -1,0 +1,11 @@
+{
+  "system_id": "SUT-V1",
+  "name": "Synthetic visual baseline",
+  "system_version": "1.0.0",
+  "system_type": "synthetic_baseline",
+  "code_revision": "local-e0-reference",
+  "weights_sha256": null,
+  "capabilities": ["video_classification"],
+  "environment": {"python": "3.13", "device": "cpu"},
+  "schema_version": "1.0.0"
+}

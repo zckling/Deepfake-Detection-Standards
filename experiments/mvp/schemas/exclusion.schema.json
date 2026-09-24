@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deepfake-standard.local/schemas/exclusion.schema.json",
+  "title": "Sample Exclusion Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["exclusion_id", "sample_id", "stage", "reason_code", "reason_detail", "requested_by", "reviewed_by", "decision", "decided_at", "schema_version"],
+  "properties": {
+    "exclusion_id": {"type": "string", "minLength": 1},
+    "sample_id": {"type": "string", "pattern": "^DFSTD-[A-Z]+-[0-9]{6}$"},
+    "stage": {"enum": ["ingest", "annotation", "dedup", "partition", "run", "analysis"]},
+    "reason_code": {"enum": ["license", "privacy", "corrupt", "duplicate", "label_uncertain", "out_of_scope", "leakage", "technical", "other"]},
+    "reason_detail": {"type": "string", "minLength": 1},
+    "requested_by": {"type": "string", "minLength": 1},
+    "reviewed_by": {"type": "string", "minLength": 1},
+    "decision": {"enum": ["excluded", "retained", "quarantined"]},
+    "decided_at": {"type": "string", "format": "date-time"},
+    "schema_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"}
+  }
+}

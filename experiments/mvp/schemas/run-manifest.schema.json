@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deepfake-standard.local/schemas/run-manifest.schema.json",
+  "title": "Experiment Run Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["run_id", "experiment_id", "dataset_version", "system_id", "system_version", "config_sha256", "environment_sha256", "started_at", "status", "schema_version"],
+  "properties": {
+    "run_id": {"type": "string", "minLength": 1},
+    "experiment_id": {"enum": ["E0", "E1", "E2", "E3", "E4"]},
+    "dataset_version": {"type": "string", "minLength": 1},
+    "system_id": {"type": "string", "minLength": 1},
+    "system_version": {"type": "string", "minLength": 1},
+    "config_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "environment_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "started_at": {"type": "string", "format": "date-time"},
+    "finished_at": {"type": ["string", "null"], "format": "date-time"},
+    "status": {"enum": ["planned", "running", "completed", "failed", "cancelled"]},
+    "wall_clock_sec": {"type": "number", "exclusiveMinimum": 0},
+    "batch_size": {"type": "integer", "minimum": 1},
+    "concurrency": {"type": "integer", "minimum": 1},
+    "queue_time_sec": {"type": "number", "minimum": 0},
+    "timeout_cap_sec": {"type": "number", "exclusiveMinimum": 0},
+    "timing_scope": {"type": "string", "minLength": 1},
+    "schema_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"}
+  }
+}

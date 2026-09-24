@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "register_status": "preliminary_review_only",
+  "reviewed_at": "2026-09-23",
+  "sources": [
+    {
+      "source_id": "SRC-SUT-DEEPFAKEBENCH",
+      "source_name": "DeepfakeBench code and pretrained-weight distribution entry",
+      "source_url": "https://github.com/SCLBD/DeepfakeBench",
+      "publisher_or_controller": "SCLBD",
+      "license_name": "CC BY-NC 4.0 stated by repository",
+      "license_url": "https://github.com/SCLBD/DeepfakeBench/blob/main/LICENSE",
+      "scope_under_review": ["code", "checkpoint"],
+      "research_use_allowed": null,
+      "commercial_use_allowed": false,
+      "redistribution_allowed": null,
+      "personal_data_present": "not_applicable_to_code_review",
+      "review_status": "pending_checkpoint_specific_review",
+      "download_status": "not_downloaded",
+      "notes": "Repository explicitly says aggregated dataset copyright remains with original providers; this record does not approve any dataset."
+    },
+    {
+      "source_id": "SRC-SUT-DF40",
+      "source_name": "DF40 code and checkpoint distribution entry",
+      "source_url": "https://github.com/YZY-stack/DF40",
+      "publisher_or_controller": "YZY-stack",
+      "license_name": "CC BY-NC 4.0 stated by repository",
+      "license_url": "https://github.com/YZY-stack/DF40#license",
+      "scope_under_review": ["code", "checkpoint"],
+      "research_use_allowed": null,
+      "commercial_use_allowed": false,
+      "redistribution_allowed": null,
+      "personal_data_present": "not_applicable_to_code_review",
+      "review_status": "pending_checkpoint_and_lineage_review",
+      "download_status": "not_downloaded",
+      "notes": "No dataset is approved by this entry; real source data and derived frames require separate records."
+    },
+    {
+      "source_id": "SRC-SUT-LAVDF",
+      "source_name": "LAV-DF code, checkpoint, and dataset terms entry",
+      "source_url": "https://github.com/ControlNet/LAV-DF",
+      "publisher_or_controller": "ControlNet project maintainers",
+      "license_name": "CC BY-NC 4.0 stated by repository; dataset terms also apply",
+      "license_url": "https://github.com/ControlNet/LAV-DF/blob/main/TERMS_AND_CONDITIONS.md",
+      "scope_under_review": ["code", "checkpoint", "dataset_terms"],
+      "research_use_allowed": null,
+      "commercial_use_allowed": false,
+      "redistribution_allowed": null,
+      "personal_data_present": "unknown",
+      "review_status": "pending_human_terms_review",
+      "download_status": "not_downloaded",
+      "notes": "Agreement to dataset terms is not automated and has not been performed."
+    }
+  ]
+}

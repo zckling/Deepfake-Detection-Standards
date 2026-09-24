@@ -1,0 +1,12 @@
+{
+  "run_id": "RUN-E0-V1-001",
+  "metric_id": "C-1.accuracy",
+  "status": "ok",
+  "value": 1.0,
+  "numerator": 4,
+  "denominator": 4,
+  "analysis_unit": "source_video",
+  "confidence_interval": null,
+  "calculator_version": "1.0.0",
+  "schema_version": "1.0.0"
+}

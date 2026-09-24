@@ -1,0 +1,152 @@
+{
+  "fixture_version": "1.0.0",
+  "absolute_tolerance": 1e-12,
+  "total": 10,
+  "passed": 10,
+  "failed": 0,
+  "cases": [
+    {
+      "case_id": "E0-BIN-PERFECT",
+      "metric_type": "binary",
+      "status": "pass",
+      "errors": [],
+      "actual": {
+        "confusion": {
+          "tp": 2,
+          "tn": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "f1": 1.0,
+        "balanced_accuracy": 1.0,
+        "roc_auc": 1.0,
+        "eer": 0.0
+      }
+    },
+    {
+      "case_id": "E0-BIN-INVERSE",
+      "metric_type": "binary",
+      "status": "pass",
+      "errors": [],
+      "actual": {
+        "confusion": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 2,
+          "fn": 2
+        },
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 0.0,
+        "f1": 0.0,
+        "balanced_accuracy": 0.0,
+        "roc_auc": 0.0,
+        "eer": 1.0
+      }
+    },
+    {
+      "case_id": "E0-BIN-CONSTANT",
+      "metric_type": "binary",
+      "status": "pass",
+      "errors": [],
+      "actual": {
+        "confusion": {
+          "tp": 2,
+          "tn": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "specificity": 0.0,
+        "f1": 0.6666666666666666,
+        "balanced_accuracy": 0.5,
+        "roc_auc": 0.5,
+        "eer": 0.5
+      }
+    },
+    {
+      "case_id": "E0-BIN-SINGLE-CLASS",
+      "metric_type": "binary",
+      "status": "pass",
+      "errors": [],
+      "actual": {
+        "confusion": {
+          "tp": 0,
+          "tn": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "accuracy": 1.0,
+        "precision": null,
+        "recall": null,
+        "specificity": 1.0,
+        "f1": null,
+        "balanced_accuracy": null,
+        "roc_auc": null,
+        "eer": null
+      }
+    },
+    {
+      "case_id": "E0-TEMPORAL-EXACT",
+      "metric_type": "temporal_iou",
+      "status": "pass",
+      "errors": [],
+      "actual": {
+        "temporal_iou": 1.0
+      }
+    },
+    {
+      "case_id": "E0-TEMPORAL-PARTIAL",
+      "metric_type": "temporal_iou",
+      "status": "pass",
+      "errors": [],
+      "actual": {
+        "temporal_iou": 0.3333333333333333
+      }
+    },
+    {
+      "case_id": "E0-TEMPORAL-DISJOINT",
+      "metric_type": "temporal_iou",
+      "status": "pass",
+      "errors": [],
+      "actual": {
+        "temporal_iou": 0.0
+      }
+    },
+    {
+      "case_id": "E0-BBOX-PARTIAL",
+      "metric_type": "bbox_iou",
+      "status": "pass",
+      "errors": [],
+      "actual": {
+        "bbox_iou": 0.14285714285714285
+      }
+    },
+    {
+      "case_id": "E0-BBOX-DISJOINT",
+      "metric_type": "bbox_iou",
+      "status": "pass",
+      "errors": [],
+      "actual": {
+        "bbox_iou": 0.0
+      }
+    },
+    {
+      "case_id": "E0-TEMPORAL-INVALID",
+      "metric_type": "temporal_iou",
+      "status": "pass",
+      "errors": [],
+      "actual": {
+        "error_type": "ValueError",
+        "message": "temporal intervals must have positive duration"
+      }
+    }
+  ]
+}

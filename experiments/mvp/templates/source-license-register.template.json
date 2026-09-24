@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "register_status": "template_not_reviewed",
+  "decision_rule": "Only sources with review_status=approved and download_status=approved_for_download may enter a real dataset acquisition workflow.",
+  "sources": [
+    {
+      "source_id": "SRC-CANDIDATE-000001",
+      "source_name": "REPLACE_ME",
+      "source_url": "https://example.invalid/replace-me",
+      "publisher_or_controller": "REPLACE_ME",
+      "license_name": "REPLACE_ME",
+      "license_url": null,
+      "license_text_path": null,
+      "license_text_sha256": null,
+      "research_use_allowed": null,
+      "commercial_use_allowed": null,
+      "redistribution_allowed": null,
+      "derivative_use_allowed": null,
+      "personal_data_present": "unknown",
+      "biometric_data_present": "unknown",
+      "consent_or_other_legal_basis": "pending_review",
+      "geographic_or_institutional_restrictions": [],
+      "required_attribution": null,
+      "retention_and_deletion_requirements": null,
+      "access_class": "restricted",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "download_status": "not_downloaded",
+      "evidence_files": [],
+      "notes": "Template record only. Do not download media until review is approved."
+    }
+  ]
+}

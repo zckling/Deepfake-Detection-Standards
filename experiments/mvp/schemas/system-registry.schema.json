@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deepfake-standard.local/schemas/system-registry.schema.json",
+  "title": "System Under Test Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["system_id", "name", "system_version", "system_type", "code_revision", "weights_sha256", "capabilities", "environment", "schema_version"],
+  "properties": {
+    "system_id": {"type": "string", "pattern": "^SUT-[A-Z0-9-]+$"},
+    "name": {"type": "string", "minLength": 1},
+    "system_version": {"type": "string", "minLength": 1},
+    "system_type": {"enum": ["model", "system", "tool", "service", "synthetic_baseline"]},
+    "code_revision": {"type": "string", "minLength": 1},
+    "weights_sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+    "capabilities": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "environment": {"type": "object", "minProperties": 1},
+    "schema_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"}
+  }
+}

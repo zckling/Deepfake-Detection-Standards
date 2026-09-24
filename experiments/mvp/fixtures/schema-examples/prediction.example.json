@@ -1,0 +1,17 @@
+{
+  "sample_id": "DFSTD-V-000001",
+  "system_id": "SUT-V1",
+  "system_version": "1.0.0",
+  "run_id": "RUN-E0-V1-001",
+  "is_fake_pred": true,
+  "fake_score": 0.82,
+  "processing_time_sec": 0.153,
+  "status": "ok",
+  "error_code": null,
+  "fake_modality_pred": ["M2"],
+  "fake_object_pred": ["O1"],
+  "segments": [],
+  "regions": [],
+  "evidence_files": [],
+  "schema_version": "1.0.0"
+}

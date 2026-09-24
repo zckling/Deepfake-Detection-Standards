@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deepfake-standard.local/schemas/metric-result.schema.json",
+  "title": "Metric Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["run_id", "metric_id", "status", "value", "numerator", "denominator", "analysis_unit", "calculator_version", "schema_version"],
+  "properties": {
+    "run_id": {"type": "string", "minLength": 1},
+    "metric_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["ok", "undefined", "unsupported", "not_applicable", "error"]},
+    "value": {"type": ["number", "null"]},
+    "numerator": {"type": ["number", "null"]},
+    "denominator": {"type": ["number", "null"]},
+    "analysis_unit": {"enum": ["source_video", "source_group", "sample", "frame", "segment", "region", "task"]},
+    "confidence_interval": {
+      "type": ["object", "null"],
+      "required": ["level", "lower", "upper", "method"],
+      "properties": {
+        "level": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1},
+        "lower": {"type": "number"},
+        "upper": {"type": "number"},
+        "method": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "calculator_version": {"type": "string", "minLength": 1},
+    "schema_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"}
+  }
+}

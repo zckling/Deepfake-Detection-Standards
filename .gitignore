@@ -1,0 +1,36 @@
+# Codex and document-rendering scratch output
+.codex-doc-render/
+
+# Independently managed skills repository (not part of this project's history)
+nsfc-agent-skills/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local editor and operating-system metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Candidate packages may contain licensed media, model weights, credentials,
+# or other non-redistributable artifacts. Keep only their templates in Git.
+experiments/mvp/candidate-packages/
+experiments/mvp/private-data/
+experiments/mvp/checkpoints/
+experiments/mvp/weights/
+*.ckpt
+*.pth
+*.pt
+*.onnx
+
+# Local validation reports for real candidates can expose package paths.
+experiments/mvp/reports/real-candidates/

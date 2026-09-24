@@ -1,0 +1,12 @@
+{
+  "exclusion_id": "EXC-000001",
+  "sample_id": "DFSTD-V-000001",
+  "stage": "analysis",
+  "reason_code": "technical",
+  "reason_detail": "Example retained after review",
+  "requested_by": "analyst-a",
+  "reviewed_by": "reviewer-b",
+  "decision": "retained",
+  "decided_at": "2026-09-23T07:02:00Z",
+  "schema_version": "1.0.0"
+}

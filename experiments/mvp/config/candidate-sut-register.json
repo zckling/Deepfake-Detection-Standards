@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_at": "2026-09-23",
+  "decision_scope": "Candidate selection only; no repository, model weight, or dataset was downloaded by this review.",
+  "preferred_first_candidate": "SUT-V1-XCEPTION-DFB",
+  "candidates": [
+    {
+      "candidate_id": "SUT-V1-XCEPTION-DFB",
+      "role": "first visual binary-classification smoke candidate",
+      "project": "DeepfakeBench",
+      "official_repository": "https://github.com/SCLBD/DeepfakeBench",
+      "candidate_implementation": "Xception",
+      "capability_target": ["binary_classification", "video_processing"],
+      "official_weight_entry": "https://github.com/SCLBD/DeepfakeBench/releases",
+      "environment_observation": "Official quick start specifies Python 3.7.2 and also provides a Dockerfile; compatibility must be verified in an isolated environment.",
+      "license_observation": "Repository states CC BY-NC 4.0; dataset copyrights remain with original providers.",
+      "selection_reason": "Simple classification output, explicit detector configuration, official pretrained-weight release entry, and direct alignment with the SUT-V1 role frozen in the MVP plan.",
+      "status": "blocked_pending_license_environment_and_weight_review",
+      "blocking_items": [
+        "confirm code and checkpoint terms for this project's use",
+        "select an isolated Python/Docker environment and record its digest",
+        "obtain and hash the exact checkpoint without obtaining any dataset",
+        "provide approved D0 media separately",
+        "implement a label-isolated output adapter"
+      ],
+      "download_authorized": false
+    },
+    {
+      "candidate_id": "SUT-V2-DF40-XCEPTION",
+      "role": "second visual detector or cross-method comparison candidate",
+      "project": "DF40",
+      "official_repository": "https://github.com/YZY-stack/DF40",
+      "candidate_implementation": "Xception checkpoint from a frozen DF40 protocol",
+      "capability_target": ["binary_classification", "video_processing"],
+      "official_weight_entry": "https://github.com/YZY-stack/DF40#2-download-ckpts-for-inference",
+      "environment_observation": "Official repository provides install.sh and multiple protocol-specific checkpoints; an exact training protocol must be frozen before comparison.",
+      "license_observation": "Official repository states dataset and code are restricted to CC BY-NC 4.0; underlying real-source conditions still require separate review.",
+      "selection_reason": "Useful only after the first adapter works, because multiple training protocols create a larger configuration-selection surface.",
+      "status": "deferred_until_sut_v1_adapter_is_stable",
+      "blocking_items": [
+        "freeze one checkpoint and its training protocol",
+        "review checkpoint and data lineage terms",
+        "avoid downloading the approximately 93 GB complete test set for E1",
+        "prove score direction and preprocessing equivalence"
+      ],
+      "download_authorized": false
+    },
+    {
+      "candidate_id": "SUT-AV1-BATFD-PLUS",
+      "role": "audio-visual temporal-localization smoke candidate",
+      "project": "LAV-DF",
+      "official_repository": "https://github.com/ControlNet/LAV-DF",
+      "candidate_implementation": "BA-TFD+",
+      "capability_target": ["binary_classification", "multimodal_consistency", "temporal_localization"],
+      "official_weight_entry": "https://github.com/ControlNet/LAV-DF#evaluation",
+      "environment_observation": "Official requirements state Python >=3.7 and <3.11, PyTorch >=1.13, torchvision >=0.14, and pytorch_lightning 1.7.x.",
+      "license_observation": "Repository states CC BY-NC 4.0 and requires agreement to dataset terms before download.",
+      "selection_reason": "Provides the capability shape needed for multimodal and temporal-localization routing, but has higher environment and data-access cost than SUT-V1.",
+      "status": "deferred_pending_terms_and_isolated_legacy_environment",
+      "blocking_items": [
+        "review and accept terms through an authorized human process",
+        "build an isolated Python <3.11 environment",
+        "obtain and hash the exact checkpoint",
+        "prepare approved audio-visual D0 media",
+        "define temporal output conversion without inventing evidence"
+      ],
+      "download_authorized": false
+    }
+  ]
+}

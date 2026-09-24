@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deepfake-standard.local/schemas/annotation.schema.json",
+  "title": "Deepfake Standard Annotation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["annotation_id", "sample_id", "annotation_type", "annotator_id", "review_status", "payload", "schema_version"],
+  "properties": {
+    "annotation_id": {"type": "string", "minLength": 1},
+    "sample_id": {"type": "string", "pattern": "^DFSTD-[A-Z]+-[0-9]{6}$"},
+    "annotation_type": {"enum": ["sample", "modality", "temporal", "frame", "spatial", "text", "evidence", "perturbation"]},
+    "annotator_id": {"type": "string", "minLength": 1},
+    "review_status": {"enum": ["draft", "double_annotated", "adjudicated", "expert_reviewed"]},
+    "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "payload": {"type": "object"},
+    "schema_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"}
+  }
+}
